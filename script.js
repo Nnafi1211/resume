@@ -161,7 +161,7 @@
     initLightbox();
 
     const saved = localStorage.getItem(STORAGE_KEY);
-    applyTheme(saved || document.documentElement.getAttribute('data-theme') || 'dark');
+    applyTheme(saved || document.documentElement.getAttribute('data-theme') || 'light');
 
     setSection((location.hash || '#about').slice(1));
     window.addEventListener('hashchange', () => setSection((location.hash || '#about').slice(1)));
