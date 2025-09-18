@@ -1,684 +1,328 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdullah Al Nomaan Nafi — Portfolio</title>
+  <meta name="description" content="Minimal, accessible portfolio for Abdullah Al Nomaan Nafi." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <head>
+  <!-- STICKY HEADER -->
+  <header role="navigation" aria-label="Primary">
+    <div class="container topbar">
+      <h1 class="brand-name">Abdullah Al Nomaan Nafi</h1>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <!-- Mobile menu button -->
+      <button
+        class="btn ghost nav-toggle"
+        id="navToggle"
+        aria-label="Open menu"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+        title="Menu"
+        type="button"
+      >☰</button>
 
-    <title>N.Nafi</title>
-
-    <script src="https://kit.fontawesome.com/b5b5882fc6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="icon" href="img/nn-white.png"
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-     <!-- Swiper CSS -->
-     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
-     <!-- CSS -->
-     <link rel="stylesheet" href="css/style.css" />
-
-     <link rel="stylesheet" href="css/style2.css">
-<link rel="stylesheet" href="css/style3.css">
-  </head>
-
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">
-          <img src="./logo image/nn-white.png" class="logo_image " alt="">
-        </span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/n.png" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#testimonial">Testimonial</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <div class="frontLine">
-            <span>
-              Abdullah Al Nomaan
-            </span>
-            <span class="text-primary">Nafi</span>
-          </div>
-          <div class="subheading mb-5">University of Maine, Orono, ME-04473 ·
-            <a href="mailto:abdullah.nafi@maine.edu">abdullah.nafi@maine.edu</a>
-          </div>
-          <div>
-            <span class="d-block d-lg-none ">
-              <div class="d-flex justify-content-center mb-5 ">
-                <img src="./img/n.png" class="frontImage rounded-circle " alt="">
-              </div>
-            </span>
-            <p class="mb-5" style="text-align: justify;">
-              Abdullah Al Nomaan Nafi is a Ph.D. student in the Department of Electrical and Computer Engineering (ECE) at the University of Maine, USA. His research interests primarily revolve around deep learning, ai security and hardware security.
-              Nafi has gained valuable experience as a lab assistant at the IOT Innovation Lab and Islamic University Computer Vision Lab, where he has actively contributed to various research projects and gained hands-on experience in the field.
-              In addition to his academic pursuits, Nafi is actively involved in the IEEE community and serves as the Secretary of the IEEE Islamic University Student Branch. He plays a crucial role in organizing technical events, workshops, and seminars, fostering a culture of innovation and knowledge-sharing among fellow students.
-              Nafi has a strong passion for pushing the boundaries of technology and utilizing it to solve real-world problems. He has demonstrated dedication and enthusiasm in his academic and professional pursuits.
-
-            </p>
-          </div>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/nomaan.nafi.1/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/abdullah-al-nomaan-nafi-7317a7190/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Nnafi1211" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.kaggle.com/abdullahalnomaannafi" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-kaggle fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://orcid.org/my-orcid?orcid=0000-0002-9032-7175" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-orcid fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.researchgate.net/profile/Abdullah-Al-Nomaan-Nafi" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-researchgate fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">General Secretary</h3>
-              <div class="subheading mb-3">IEEE Islamic University Student Branch</div>
-              <!-- <p style="text-align: justify;">
-                The IEEE (Institute of Electrical and Electronics Engineers) Islamic University Student Branch is a dynamic and vibrant student organization affiliated with the global IEEE network. Located at the Islamic University, this student branch is dedicated to promoting the advancement of technology, innovation, and professional development among its members.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2023 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">Islamic University Computer Vision Lab</div>
-              <!-- <p style="text-align: justify;">
-                The Islamic University Computer Vision Lab is a dedicated research facility within the Islamic University that focuses on the field of computer vision. Computer vision is an interdisciplinary area of study that combines computer science and image processing to enable computers to interpret and understand visual information from the world around them.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">March 2021 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">IoT Innovation Lab</div>
-              <!-- <p style="text-align: justify;">
-                IoT Innovation Lab is a specialized facility or center within the university campus dedicated to fostering innovation, entrepreneurship, and the development of cutting-edge technologies and solutions. These labs serve as dynamic hubs where students, faculty members, researchers, and entrepreneurs can collaborate, experiment, and transform creative ideas into tangible innovations.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2020 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Treaserer</h3>
-              <div class="subheading mb-3">Islamic University Career Club</div>
-              <!-- <p style="text-align: justify;">
-                The Islamic University Career Club is a student-driven organization committed to nurturing students' career development. Through career guidance, resume workshops, networking events, and internship assistance, the club empowers students to make informed career choices and excel in the professional world. By bridging the gap between academia and industry, it plays a pivotal role in helping students translate their education into successful careers.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2022 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Media Secretary</h3>
-              <div class="subheading mb-3">Student Association of Information and Communication Technology (SAICT)</div>
-              <!-- <p style="text-align: justify;">
-                SAICT (Student Association of Information and Communication Technology) plays a pivotal role in building a strong sense of community within the ICT department by fostering connections among alumni, faculty, and students. Beyond networking, the association places a significant emphasis on the holistic development of its student members. Through a diverse range of activities, including workshops, seminars, and collaborative projects, SAICT provides an enriching environment for students to enhance their ICT knowledge and skills.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2022 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Head of Design and IT</h3>
-              <div class="subheading mb-3">Islamic University Career Club</div>
-              <!-- <p style="text-align: justify;">
-                The Islamic University Career Club is a student-driven organization committed to nurturing students' career development. Through career guidance, resume workshops, networking events, and internship assistance, the club empowers students to make informed career choices and excel in the professional world. By bridging the gap between academia and industry, it plays a pivotal role in helping students translate their education into successful careers.
-              </p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2021 - July 2022</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Islamic University, Kushtia, Bangladesh</h3>
-              <div class="subheading mb-3">B.Sc. Engineering</div>
-              <div>Information and Communication Technology</div>
-              <p>GPA: 3.77 / 4.00</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Janurary 2019 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Navaron College, Sharsha, Jessore</h3>
-              <div class="subheading mb-3">Higher-Secondary School Certificate (H.S.C.)</div>
-              <div>Background: Science</div>
-              <p>GPA: 5.00 / 5.00</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2016 - May 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Buruj Bagan Secondary School, Sharsha, Jessore</h3>
-              <div class="subheading mb-3">Secondary School Certificate (S.S.C.)</div>
-              <div>Background: Science</div>
-              <p>GPA: 5.00 / 5.00</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2011 - April 2016</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-django"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-c-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-cplusplus-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-arduino-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-arduino"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-docker-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-git-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-anaconda-original"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-opencv-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-ubuntu-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-typescript-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-pytorch-original"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-photoshop-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-pandas-original"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-numpy-original"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-matlab-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-linux-plain"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-java-plain"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Soft Skills</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Networking</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Leadership</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Team-work</li>
-            
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-          <section>
-            <div class="container swiper">
-              <div class="slide-container">
-                <div class="card-wrapper swiper-wrapper">
-                  <div class="card swiper-slide  ">
-                    <div class="image-box">
-                      <img src="img/robocob.jpeg" alt="">
-                    </div>
-                    <div class="profile-details">
-                      <div class="name-job">
-                        <div class="d-flex justify-content-between" >
-                          <h3 class="name">Obstacle Avoiding Car</h3>
-                          <a href="#" id="gitlink"  class=""> 
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </div>
-                        <h4 class="job flex text-justify">
-                          This project is an arduino based autonomous vehicle design and robotics project that focuses on creating a vehicle capable of navigating its environment while avoiding obstacles. 
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card swiper-slide  ">
-                    <div class="image-box">
-                      <img src="img/mp.png" alt="">
-                    </div>
-                    <div class="profile-details">
-                      <div class="name-job">
-                        <div class="d-flex justify-content-between" >
-                          <h3 class="name">Invisible Painter</h3>
-                          <a href="#" id="gitlink"  class=""> 
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </div>
-                        <h4 class="job flex text-justify">
-                          This is an ML based computer vision project that can paint different color on display by tracking the finger. Where the color can be changed using different movement of the finger and also it can be removed. In this project Mediapipe, openCV and some other libraries have been used.
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="card swiper-slide  ">
-                    <div class="image-box">
-                      <img src="img/gvc.png" alt="">
-                    </div>
-                    <div class="profile-details">
-                      <div class="name-job">
-                        <div class="d-flex justify-content-between" >
-                          <h3 class="name">Gesture Volume Controller</h3>
-                          <a href="#" id="gitlink"  class=""> 
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </div>
-                        <h4 class="job flex text-justify">
-                          This is a machine learning project that can control the volume of your device with the gesture of you finger. It adjust the volume depending the distance of the thumb and index finger head.
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card swiper-slide  ">
-                    <div class="image-box">
-                      <img src="img/face_mask.png" alt="">
-                    </div>
-                    <div class="profile-details">
-                      <div class="name-job">
-                        <div class="d-flex justify-content-between" >
-                          <h3 class="name">Automated Face Mask Detector</h3>
-                          <a href="#" id="gitlink"  class=""> 
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </div>
-                        <h4 class="job flex text-justify">
-                          This project can detect human face and check it have musk on or off. This can be used for assuring a persion wearing mask. This project uses OpenCV and Mediapipe. 
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card swiper-slide  ">
-                    <div class="image-box">
-                      <img src="img/td.png" alt="">
-                    </div>
-                    <div class="profile-details">
-                      <div class="name-job">
-                        <div class="d-flex justify-content-between" >
-                          <h3 class="name">Real-time vehicle tracking</h3>
-                          <a href="#" id="gitlink"  class=""> 
-                            <i class="fab fa-github"></i>
-                          </a>
-                        </div>
-                        <h4 class="job flex text-justify">This project is build using YOLO version 8. This detect different vehicles on random traffic in Bangladesh. This can be a very useful project for controlling the traffic scenes.</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next swiper-navBtn"></div>
-              <div class="swiper-button-prev swiper-navBtn"></div>
-              <div class="swiper-pagination"></div>
-            </div>       
-          </section>
-        </div>
-      </section>
-
-
-
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="testimonial">
-        <div class="my-auto">
-          <h2 class="mb-5">Testimonial</h2>
-          <section class="container3">
-            <div class="testimonial mySwiper">
-              <div class="testi-content swiper-wrapper">
-                <div class="slide swiper-slide">
-                  <img src="./img/nomaan.jpg" alt="" class="image" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-                    saepe provident dolorem a quaerat quo error facere nihil deleniti
-                    eligendi ipsum adipisci, fugit, architecto amet asperiores
-                    doloremque deserunt eum nemo.
-                  </p>
-                  <i class="bx bxs-quote-alt-left quote-icon"></i>
-                  <div class="details">
-                    <span class="name">Marnie Lotter</span>
-                    <span class="job">Web Developer</span>
-                  </div>
-                </div>
-                <div class="slide swiper-slide">
-                  <img src="./img/nomaan.jpg" alt="" class="image" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-                    saepe provident dolorem a quaerat quo error facere nihil deleniti
-                    eligendi ipsum adipisci, fugit, architecto amet asperiores
-                    doloremque deserunt eum nemo.
-                  </p>
-                  <i class="bx bxs-quote-alt-left quote-icon"></i>
-                  <div class="details">
-                    <span class="name">Marnie Lotter</span>
-                    <span class="job">Web Developer</span>
-                  </div>
-                </div>
-                <div class="slide swiper-slide">
-                  <img src="./img/nomaan.jpg" alt="" class="image" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-                    saepe provident dolorem a quaerat quo error facere nihil deleniti
-                    eligendi ipsum adipisci, fugit, architecto amet asperiores
-                    doloremque deserunt eum nemo.
-                  </p>
-                  <i class="bx bxs-quote-alt-left quote-icon"></i>
-                  <div class="details">
-                    <span class="name">Marnie Lotter</span>
-                    <span class="job">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next nav-btn"></div>
-              <div class="swiper-button-prev nav-btn"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </section>
-        </div>
-      </section> -->
-      
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Generative Adversarial Networks (GANs) Specialization - <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/C3EZFG4G74GR" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Deep Learning Specialization - <a href="https://www.coursera.org/account/accomplishments/specialization/66DVD5G974BS?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Machine Learning (Stanford|Online) - <a href="https://www.coursera.org/account/accomplishments/certificate/WBR3RB9CD3UM" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Mathematics for Machine Learning: Multivariate Calculus - <a href="https://www.coursera.org/account/accomplishments/verify/QJGEMSZRE45H" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Mathematics for Machine Learning: Linear Algebra - <a href="https://www.coursera.org/account/accomplishments/verify/V4VVRXVTNNQA" target="_blank">View Credentials</a>
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Coursera Certification - Algorithmic Toolbox - <a href="https://www.coursera.org/account/accomplishments/verify/R48GKY92FRYD?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Codecademy Certification - Learn Web Scraping with Beautiful Soup Course - <a href="https://www.codecademy.com/profiles/abdullahAlNomaanNafi5986889358/certificates/f4cba58fa21e556a6a8f5a975cef5388" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Codecademy Certification - Learn Statistics with Python Course - <a href="https://www.codecademy.com/profiles/abdullahAlNomaanNafi5986889358/certificates/05226ac87e20192597adea00b851c15a" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Codecademy Certification - Learn Python 3 Course - <a href="https://www.codecademy.com/profiles/abdullahAlNomaanNafi5986889358/certificates/6c152bd262967f8c941c9707ed636bda" target="_blank">View Credentials</a> 
-            </li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Solved 500+ Problems from different Online Judges</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Pupil (Green Coder) - Codeforces 2018</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - 7 Days Workshop On Embedded System and Robotics 2021</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              National Board Scholarship in Secondary School Certificate (SSC) 2016</li>
-          </ul>
-        </div>
-      </section>
-
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
-        <div class="my-auto">
-          <h2 class="mb-5">Contact </h2>
-          <section>
-            <div class="container2">
-              <div class="content">
-                <div class="left-side">
-                  <div class="address details">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div class="topic">Address</div>
-                    <div class="text-one">Islamic University-7003</div>
-                    <div class="text-two">Kushtia, Bangladesh</div>
-                  </div>
-                  <div class="phone details">
-                    <i class="fas fa-phone-alt"></i>
-                    <div class="topic">Phone</div>
-                    <div class="text-one">+8801783562289</div>
-                    <div class="text-two">+8801521712806</div>
-                  </div>
-                  <div class="email details">
-                    <i class="fas fa-envelope"></i>
-                    <div class="topic">Email</div>
-                    <div class="text-one">nomaan.ict.iu@gmail.com</div>
-                    <div class="text-two">nomaan.ict.iu@ieee.org</div>
-                  </div>
-                </div>
-                <div class="right-side">
-                  <div class="topic-text">SEND ME A MESSAGE</div>
-                  <p>If you have any work from me or any types of quries, you can send me message from here. It's my pleasure to help you.</p>
-                <form action="https://formspree.io/f/xjvqoovk" method="POST" role="form" target="_blank">
-                  <div class="input-box">
-                    <input type="text" name="name" placeholder="Enter your name">
-                  </div>
-                  <div class="input-box">
-                    <input type="text" name="email" placeholder="Enter your email">
-                  </div>
-                  <div class="input-box message-box">
-                    <textarea type="" name="message"   placeholder="Enter Your Message"></textarea>
-                  </div>
-                  
-                  <div class="button">
-                    <button type="submit" class="button">Send</button>
-                  </div>
-                </form>
-              </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      
-
+      <!-- Primary nav -->
+      <nav id="primaryNav" class="nav-links" role="tablist" aria-label="Sections">
+        <a href="#about" data-section="about" role="tab" aria-selected="true">About</a>
+        <a href="#experience" data-section="experience" role="tab">Experience</a>
+        <a href="#publications" data-section="publications" role="tab">Publications</a>
+        <a href="#education" data-section="education" role="tab">Education</a>
+        <a href="#photography" data-section="photography" role="tab">Photography</a>
+        <a href="#contact" data-section="contact" role="tab">Contact</a>
+        <button class="btn ghost" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" type="button">☀️</button>
+      </nav>
     </div>
+  </header>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <main id="content" class="container" tabindex="-1">
+    <!-- ABOUT -->
+    <section class="card active" data-section="about" aria-labelledby="about-title">
+      <div class="profile">
+        <figure class="profile-media">
+          <img
+            src="img/profile.png"
+            alt="Formal portrait of Abdullah Al Nomaan Nafi"
+            loading="lazy"
+            width="600" height="750"
+          />
+        </figure>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <div class="profile-body">
+          <h2 id="about-title">Profile</h2>
+          <p class="lead">
+            Abdullah Al Nomaan Nafi is a Ph.D. student in the Department of Electrical and Computer Engineering (ECE) at the University of Maine, USA. His research interests primarily revolve around deep learning, ai security and hardware security. Nafi has gained valuable experience as a research assistant at the Bio-Imaging Research Lab, where he has actively contributed to various research projects and gained hands-on experience in the field. In addition to his academic pursuits, Nafi is actively involved in the IEEE community and serves as the Secretary of the IEEE Islamic University Student Branch. He plays a crucial role in organizing technical events, workshops, and seminars, fostering a culture of innovation and knowledge-sharing among fellow students. Nafi has a strong passion for pushing the boundaries of technology and utilizing it to solve real-world problems. He has demonstrated dedication and enthusiasm in his academic and professional pursuits.
+          </p>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+          <div class="profile-sections">
+            <div class="profile-block">
+              <h3 class="subtle">Research Interests</h3>
+              <div class="chips" role="list" aria-label="Research interests">
+                <span class="chip" role="listitem">Trustworthy AI</span>
+                <span class="chip" role="listitem">AI Security</span>
+                <span class="chip" role="listitem">Medical Imaging</span>
+              </div>
+            </div>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+            <div class="profile-block">
+              <h3 class="subtle">Working Status</h3>
+              <p class="status">
+                Open to research collaborations and internships · Remote/Hybrid
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </body>
+    <!-- EXPERIENCE -->
+    <section class="card" data-section="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
 
+      <div class="experience-group">
+        <h3 class="group-title">Professional Experience</h3>
+        <div class="list">
+          <article class="item">
+            <h4 class="role">Graduate Research Assistant — Secure and Intelligent Edge (SIEGE) Lab</h4>
+            <div class="meta">Sep 2024 – Present · University of Maine, Orono, United States</div>
+            <!-- <ul class="bullets">
+              <li>Drove X initiative resulting in +Y% outcome.</li>
+              <li>Collaborated across research/eng to ship feature Z to N users.</li>
+              <li>Mentored junior teammates; improved reliability and test coverage.</li>
+            </ul> -->
+            <div class="chips"><span class="chip">AI Security</span><span class="chip">Adversarial Attack</span><span class="chip">LLM Attack</span></div>
+          </article>
+
+          <article class="item">
+            <h4 class="role">Research Assistant — Bio-Imaging Research Lab</h4>
+            <div class="meta">Jan 2023 – May 2024 · Islamic University, Kushtia, Bangladesh</div>
+            <!-- <ul class="bullets">
+              <li>Reduced latency by 35% by refactoring XYZ.</li>
+              <li>Owned on-call rotations and improved SLO adherence by 12%.</li>
+            </ul> -->
+            <div class="chips"><span class="chip">Medical Imaging</span><span class="chip">Deep Learning</span><span class="chip">XAI</span></div>
+          </article>
+        </div>
+      </div>
+
+      <hr class="divider" aria-hidden="true" />
+
+      <div class="experience-group">
+        <h3 class="group-title">Volunteer Experience</h3>
+        <div class="list">
+          <article class="item">
+            <h4 class="role">General Secretary — Bangladesh Student Association, UMaine</h4>
+            <div class="meta">Sep 2024 – Aug 2025 · University of Maine, Orono, United States</div>
+            <div class="chips"><span class="chip">Community</span><span class="chip">Management</span></div>
+          </article>
+
+          <article class="item">
+            <h4 class="role">Judge — UMaine Student Symposium 2025</h4>
+            <div class="meta">Apr 2025 · University of Maine, Orono, United States</div>
+            <div class="chips"><span class="chip">Education</span><span class="chip">Mentorship</span></div>
+          </article>
+
+            <article class="item">
+            <h4 class="role">Instructor - IEEE IU SB Programming Bootcamp</h4>
+            <div class="meta">Jun 2021 - Jul 2021 · Islamic University, Kushtia, Bangladesh</div>
+            <div class="chips"><span class="chip">Education</span><span class="chip">Mentorship</span></div>
+          </article>
+
+            <article class="item">
+            <h4 class="role">Volunteer — IEEE CS BDC Summer Symposium 2023</h4>
+            <div class="meta">Jun 2023 · Islamic University, Kushtia, Bangladesh</div>
+            <div class="chips"><span class="chip">Event Management</span></div>
+          </article>
+
+            <article class="item">
+            <h4 class="role">General Secretary — IEEE Islamic University Student Branch</h4>
+            <div class="meta">Jan 2023 - May 2024 · Islamic University, Kushtia, Bangladesh</div>
+            <div class="chips"><span class="chip">Organizational Leadership</span></div>
+          </article>
+
+            <article class="item">
+            <h4 class="role">Vice President — Islamic University Career Club</h4>
+            <div class="meta">Jul 2023 - May 2023 · Islamic University, Kushtia, Bangladesh</div>
+            <div class="chips"><span class="chip">Organizational Leadership</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS (Expandable, title on its own line) -->
+    <section class="card" data-section="publications" aria-labelledby="pub-title">
+      <h2 id="pub-title">Publications</h2>
+
+      <!-- Publication #1 -->
+      <article class="pub"
+        data-authors="Md Maruf Hossain; Md Mahfuz Ahmed; Abdullah Al Nomaan Nafi; Md Rakibul Islam; Md Shahin Ali; Jahurul Haque; Md Sipon Miah; Md Mahbubur Rahman; Md Khairul Islam"
+        data-abstract="Computed tomography (CT) scans play a key role in the diagnosis of stroke, a leading cause of morbidity and mortality worldwide. However, interpreting these scans is often challenging, necessitating automated solutions for timely and accurate diagnosis. This research proposed a novel hybrid model that integrates a Vision Transformer (ViT) and a Long Short Term Memory (LSTM) to accurately detect and classify stroke characteristics using CT images. The ViT identifies essential features from CT images, while LSTM processes sequential information generated by the ViT, adept at capturing crucial temporal dependencies for understanding patterns and context in sequential data. Moreover, our approach addresses class imbalance issues in stroke datasets by utilizing advanced strategies to improve model robustness. To ensure clinical relevance, Explainable Artificial Intelligence (XAI) methods, including attention maps, SHAP, and LIME, were incorporated to provide reliable and interpretable predictions. The proposed model was evaluated using the primary BrSCTHD-2023 dataset, collected from Rajshahi Medical College Hospital, achieving top accuracies of 73.80%, 91.61%, 93.50%, and 94.55% with the SGD, RMSProp, Adam, and AdamW optimizers, respectively. To further validate and generalize the model, it was also tested on the Kaggle brain stroke dataset, where it achieved an impressive accuracy of 96.61%. The proposed ViT-LSTM model significantly outperformed traditional CNNs and ViT models, demonstrating superior diagnostic performance and generalizability. This study advances automated stroke diagnosis by combining deep learning innovations, domain expertise, and enhanced interpretability to support clinical decision-making, providing reliable diagnostic solutions.">
+        <button class="pub-toggle" aria-expanded="false" aria-controls="pub1-details" id="pub1-toggle">
+          <span class="chev" aria-hidden="true">▶</span>
+          <div class="pub-lines">
+            <h3 class="pub-head">A novel hybrid ViT-LSTM model with explainable AI for brain stroke detection and classification in CT images: A case study of Rajshahi region</h3>
+            <div class="pub-meta">
+              <span class="pill">Computers in Biology and Medicine</span>
+              <span class="pill">2025</span>
+              <span class="pill">IF: 6.3</span>
+              <a class="pill link" href="https://www.sciencedirect.com/science/article/abs/pii/S0010482525000617" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </button>
+        <div class="pub-details" id="pub1-details" role="region" aria-labelledby="pub1-toggle">
+          <div class="authors"><strong>Authors:</strong> <span class="authors-text"></span></div>
+          <div class="abstract"><strong>Abstract:</strong> <span class="abstract-text"></span></div>
+        </div>
+      </article>
+
+      <!-- Publication #2 -->
+      <article class="pub"
+        data-authors="Md Mahfuz Ahmed; Md Maruf Hossain; Md Rakibul Islam; Md Shahin Ali; Abdullah Al Nomaan Nafi; Md Faisal Ahmed; Kazi Mowdud Ahmed; Md Sipon Miah; Md Mahbubur Rahman; Mingbo Niu; Md Khairul Islam"
+        data-abstract="Brain tumor, a leading cause of uncontrolled cell growth in the central nervous system, presents substantial challenges in medical diagnosis and treatment. Early and accurate detection is essential for effective intervention. This study aims to enhance the detection and classification of brain tumors in Magnetic Resonance Imaging (MRI) scans using an innovative framework combining Vision Transformer (ViT) and Gated Recurrent Unit (GRU) models. We utilized primary MRI data from Bangabandhu Sheikh Mujib Medical College Hospital (BSMMCH) in Faridpur, Bangladesh. Our hybrid ViT-GRU model extracts essential features via ViT and identifies relationships between these features using GRU, addressing class imbalance and outperforming existing diagnostic methods. We extensively processed the dataset, and then trained the model using various optimizers (SGD, Adam, AdamW) and evaluated through rigorous 10-fold cross-validation. Additionally, we incorporated Explainable Artificial Intelligence (XAI) techniques-Attention Map, SHAP, and LIME-to enhance the interpretability of the model’s predictions. For the primary dataset BrTMHD-2023, the ViT-GRU model achieved precision, recall, and F1-score metrics of 97%. The highest accuracies obtained with SGD, Adam, and AdamW optimizers were 81.66%, 96.56%, and 98.97%, respectively. Our model outperformed existing Transfer Learning models by 1.26%, as validated through comparative analysis and cross-validation. The proposed model also shows excellent performances with another Brain Tumor Kaggle Dataset outperforming the existing research done on the same dataset with 96.08% accuracy. The proposed ViT-GRU framework significantly improves the detection and classification of brain tumors in MRI scans. The integration of XAI techniques enhances the model’s transparency and reliability, fostering trust among clinicians and facilitating clinical application. Future work will expand the dataset and apply findings to real-time diagnostic devices, advancing the field.">
+        <button class="pub-toggle" aria-expanded="false" aria-controls="pub2-details" id="pub2-toggle">
+          <span class="chev" aria-hidden="true">▶</span>
+          <div class="pub-lines">
+            <h3 class="pub-head">Brain tumor detection and classification in MRI using hybrid ViT and GRU model with explainable AI in Southern Bangladesh</h3>
+            <div class="pub-meta">
+              <span class="pill">Scientific reports</span>
+              <span class="pill">2024</span>
+              <span class="pill">IF: 3.9</span>
+              <a class="pill link" href="https://www.nature.com/articles/s41598-024-71893-3" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </button>
+        <div class="pub-details" id="pub2-details" role="region" aria-labelledby="pub2-toggle">
+          <div class="authors"><strong>Authors:</strong> <span class="authors-text"></span></div>
+          <div class="abstract"><strong>Abstract:</strong> <span class="abstract-text"></span></div>
+        </div>
+      </article>
+
+      <!-- Publication #3 -->
+      <article class="pub"
+        data-authors="Md Rakibul Islam, Md Mahbubur Rahman, Md Shahin Ali, Abdullah Al Nomaan Nafi, Md Shahariar Alam, Tapan Kumar Godder, Md Sipon Miah, Md Khairul Islam"
+        data-abstract="Breast cancer is a condition where the irregular growth of breast cells occurs uncontrollably, leading to the formation of tumors. It poses a significant threat to women’s lives globally, emphasizing the need for enhanced methods of detecting and categorizing the disease. In this work, we propose an Ensemble Deep Convolutional Neural Network (EDCNN) model that exhibits superior accuracy compared to several transfer learning models and the Vision Transformer model. Our EDCNN model integrates the strengths of the MobileNet and Xception models to improve its performance in breast cancer detection and classification. We employ various preprocessing techniques, including image resizing, data normalization, and data augmentation, to prepare the data for analysis. By following these measures, the formatting is optimized, and the model’s capacity to make generalizations is improved. We trained and evaluated our proposed EDCNN model using ultrasound images, a widely available modality for breast cancer imaging. The outcomes of our experiments illustrate that the EDCNN model attains an exceptional accuracy of 87.82% on Dataset 1 and 85.69% on Dataset 2, surpassing the performance of several well-known transfer learning models and the Vision Transformer model. Furthermore, an AUC value of 0.91 on Dataset 1 highlights the robustness and effectiveness of our proposed model. Moreover, we highlight the incorporation of the Grad-CAM Explainable Artificial Intelligence (XAI) technique to improve the interpretability and transparency of our proposed model. Additionally, we performed image segmentation using the U-Net segmentation technique on the input ultrasound images. This segmentation process allowed for the identification and isolation of specific regions of interest, facilitating a more comprehensive analysis of breast cancer characteristics. In conclusion, the study presents a creative approach to detecting and categorizing breast cancer, demonstrating the superior performance of the EDCNN model compared to well-established transfer learning models. Through advanced deep learning techniques and image segmentation, this study contributes to improving diagnosis and treatment outcomes in breast cancer.">
+        <button class="pub-toggle" aria-expanded="false" aria-controls="pub2-details" id="pub2-toggle">
+          <span class="chev" aria-hidden="true">▶</span>
+          <div class="pub-lines">
+            <h3 class="pub-head">Enhancing breast cancer segmentation and classification: An Ensemble Deep Convolutional Neural Network and U-net approach on ultrasound images</h3>
+            <div class="pub-meta">
+              <span class="pill">Machine Learning with Applications</span>
+              <span class="pill">2024</span>
+              <span class="pill">IF: 4.9</span>
+              <a class="pill link" href="https://www.sciencedirect.com/science/article/pii/S2666827024000318" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </button>
+        <div class="pub-details" id="pub2-details" role="region" aria-labelledby="pub2-toggle">
+          <div class="authors"><strong>Authors:</strong> <span class="authors-text"></span></div>
+          <div class="abstract"><strong>Abstract:</strong> <span class="abstract-text"></span></div>
+        </div>
+      </article>
+
+      <!-- Publication #4 -->
+      <article class="pub"
+        data-authors="SM Mahim, Md Shahin Ali, Md Olid Hasan, Abdullah Al Nomaan Nafi, Arefin Sadat, Shakib Al Hasan, Bryar Shareef, Md Manjurul Ahsan, Md Khairul Islam, Md Sipon Miah, Ming-Bo Niu"
+        data-abstract="Alzheimer’s Disease (AD) is a significant cause of dementia worldwide, and its progression from mild to severe affects an individual’s ability to perform daily activities independently. The accurate and early diagnosis of AD is crucial for effective clinical intervention. However, interpreting AD from medical images can be challenging, even for experienced radiologists. Therefore, there is a need for an automatic diagnosis of AD, and researchers have investigated the potential of utilizing Artificial Intelligence (AI) techniques, particularly deep learning models, to address this challenge. This study proposes a framework that combines a Vision Transformer (ViT) and a Gated Recurrent Unit (GRU) to detect AD characteristics from Magnetic Resonance Imaging (MRI) images accurately and reliably. The ViT identifies crucial features from the input image, and the GRU establishes clear correlations between these features. The proposed model overcomes the class imbalance issue in the MRI image dataset and achieves superior accuracy and performance compared to existing methods. The model was trained on the Alzheimer’s MRI Preprocessed Dataset obtained from Kaggle, achieving notable accuracies of 99.53% for 4-class and 99.69% for binary classification. It also demonstrated a high accuracy of 99.26% for 3-class on the AD Neuroimaging Initiative (ADNI) Baseline Database. These results were validated through a thorough 10-fold cross-validation process. Furthermore, Explainable AI (XAI) techniques were incorporated to make the model interpretable and explainable. This allows clinicians to understand the model’s decision-making process and gain insights into the underlying factors driving the AD diagnosis.">
+        <button class="pub-toggle" aria-expanded="false" aria-controls="pub2-details" id="pub2-toggle">
+          <span class="chev" aria-hidden="true">▶</span>
+          <div class="pub-lines">
+            <h3 class="pub-head">Unlocking the potential of XAI for improved Alzheimer’s disease detection and classification using a ViT-GRU model</h3>
+            <div class="pub-meta">
+              <span class="pill">IEEE Access</span>
+              <span class="pill">2024</span>
+              <span class="pill">IF: 3.6</span>
+              <a class="pill link" href="https://ieeexplore.ieee.org/abstract/document/10385046" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </button>
+        <div class="pub-details" id="pub2-details" role="region" aria-labelledby="pub2-toggle">
+          <div class="authors"><strong>Authors:</strong> <span class="authors-text"></span></div>
+          <div class="abstract"><strong>Abstract:</strong> <span class="abstract-text"></span></div>
+        </div>
+      </article>
+
+      <!-- Publication #5 -->
+      <article class="pub"
+        data-authors="Md Manjurul Ahsan, Tasfiq E Alam, Mohd Ariful Haque, Md Shahin Ali, Rakib Hossain Rifat, Abdullah Al Nomaan Nafi, Md Maruf Hossain, Md Khairul Islam"
+        data-abstract="The Monkeypox outbreak has emerged as a pressing global health challenge, evidenced by rising cases across nations. Individuals afflicted exhibit diverse dermatological symptoms that risk further transmission via contamination. Our study assessed the efficacy of three modified transfer learning models (M-VGG16, M-ResNet50, M-ResNet101) alongside vision transformers (ViT) across four investigations. We achieved high accuracy in discriminating Monkeypox cases, with M-VGG16 achieving 88%, 76%, and 77% accuracy in Studies One, Two and Four and M-ResNet50 achieving 89% in Study Three. To comprehend triggers for Monkeypox onset, we utilized Local Interpretable Model-Agnostic Explanations (LIME) to explain predictions visually. LIME alignments underscored our models' high accuracy, correlating with segmented identification of infected regions. Further, we implemented Federated Learning on decentralized data to evaluate generalization capabilities. Blending established deep learning with emerging decentralized learning and explanation techniques is vital in improving predictive accuracy and elucidating Monkeypox intricacies amid the persisting global outbreak. Our study emphasizes the continued relevance of pioneering techniques while introducing new approaches to address this major health challenge.">
+        <button class="pub-toggle" aria-expanded="false" aria-controls="pub2-details" id="pub2-toggle">
+          <span class="chev" aria-hidden="true">▶</span>
+          <div class="pub-lines">
+            <h3 class="pub-head">Enhancing monkeypox diagnosis and explanation through modified transfer learning, vision transformers, and federated learning</h3>
+            <div class="pub-meta">
+              <span class="pill">Informatics in Medicine Unlocked</span>
+              <span class="pill">2024</span>
+              <span class="pill">CiteScore: 8.7</span>
+              <a class="pill link" href="https://www.sciencedirect.com/science/article/pii/S2352914824000054" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </button>
+        <div class="pub-details" id="pub2-details" role="region" aria-labelledby="pub2-toggle">
+          <div class="authors"><strong>Authors:</strong> <span class="authors-text"></span></div>
+          <div class="abstract"><strong>Abstract:</strong> <span class="abstract-text"></span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card" data-section="education" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <article class="item">
+        <h3>PhD . University of Maine</h3>
+         <div class="meta">Major: Electrical and Computer Engineering</div>
+        <div class="meta">2024 – Present · Orono, United States</div>
+        <p>GPA: N/A</p>
+      </article>
+
+      <article class="item">
+        <h3>Bachelor of Science . Islamic University</h3>
+         <div class="meta">Major: Information and Communication Technology</div>
+        <div class="meta">2019 – 2024 · Kushtia, Bangladesh</div>
+        <p>CGPA: 3.73/4.00</p>
+      </article>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section class="card" data-section="photography" aria-labelledby="photo-title">
+      <h2 id="photo-title">Photography</h2>
+      <p class="meta">Click any image to view full size.</p>
+      <div class="photo-grid">
+        <!-- You can add data-full with a higher-res URL for each image -->
+        <img src="img\IMG_9607.jpg" data-full="img\IMG_9607.jpg" alt="Sample photo 1" loading="lazy" />
+        <img src="img\IMG_20231023_065935.jpg" data-full="img\IMG_20231023_065935.jpg" alt="Sample photo 2" loading="lazy" />
+        <img src="https://placehold.co/1200x900/jpg" data-full="https://placehold.co/2400x1800/jpg" alt="Sample photo 3" loading="lazy" />
+        <img src="https://placehold.co/1200x900/jpg" data-full="https://placehold.co/2400x1800/jpg" alt="Sample photo 4" loading="lazy" />
+        <img src="https://placehold.co/1200x900/jpg" data-full="https://placehold.co/2400x1800/jpg" alt="Sample photo 5" loading="lazy" />
+        <img src="https://placehold.co/1200x900/jpg" data-full="https://placehold.co/2400x1800/jpg" alt="Sample photo 6" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card" data-section="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact & Links</h2>
+      <div class="list">
+        <div><strong>Email:</strong> <a href="mailto:abdullah.nafi@maine.edu">abdullah.nafi@maine.edu</a>, <a href="mailto:nomaan.ict.iu@gmail.com">nomaan.ict.iu@gmail.com</a></div>
+        <div><strong>Phone:</strong> +1 (207) 378-7486</div>
+        <div><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=nWZyQ6gAAAAJ&hl=en">Abdullah Al Nomaan Nafi</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdullah-al-nomaan-nafi-7317a7190/">Abdullah Al Nomaan Nafi</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/Nnafi1211">@Nnafi1211</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Abdullah Al Nomaan Nafi — All right reserved.
+  </footer>
+
+  <!-- LIGHTBOX (for full-size photos) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Full-size photo viewer">
+    <button class="lightbox-close" aria-label="Close viewer">✕</button>
+    <img id="lightboxImg" alt="" />
+  </div>
+</body>
 </html>
